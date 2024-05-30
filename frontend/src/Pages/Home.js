@@ -4,6 +4,9 @@ import Dishes from "../Components/Dishes";
 import PopularDishes from "../Components/PopularDishes";
 import Button from "../Components/Button";
 import Header from "../Components/Header";
+import Navbar from "../Components/Navbar";
+import Footer from "../Components/Footer";
+import Menu from "../Components/Menu";
 
 export default function Home() {
   const [data, setData] = useState([]);
@@ -20,16 +23,20 @@ export default function Home() {
   return (
     <div
       style={{
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
-        alignItems: "center",
         minHeight: "100vh",
-        margin: "3%",
       }}
     >
+      <Navbar />
       <Header style={{ margin: "2px" }} />
-      <div style={{ display: "flex", gap: "50px", margin: "20px" }}>
+      <div
+        style={{
+          margin: "5px",
+          display: "flex",
+          gap: "8px",
+          paddingInlineStart: "10px",
+          overflowX: "auto",
+        }}
+      >
         <Button name="Italian" />
         <Button name="Indian" />
         <Button name="Indian" />
@@ -58,6 +65,7 @@ export default function Home() {
             </div>
           ))}
       </div>
+      <Menu />
       <div
         style={{
           display: "flex",
@@ -82,6 +90,7 @@ export default function Home() {
             ))
         )}
       </div>
+      <Footer />
     </div>
   );
 }
