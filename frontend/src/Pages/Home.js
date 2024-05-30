@@ -43,7 +43,14 @@ export default function Home() {
         <Button name="Indian" />
       </div>
 
-      <div style={{ display: "flex", flexWrap: "wrap", gap: "20px" }}>
+      <div
+        style={{
+          display: "flex",
+          flexWrap: "wrap",
+          gap: "20px",
+          boxShadow: "0px 2px 4px rgba(0, 0, 0, 0.1)",
+        }}
+      >
         {/* popular dishes */}
         {data.popularDishes &&
           data.popularDishes.map((dish, index) => (
@@ -85,6 +92,7 @@ export default function Home() {
                   equipments={dish.equipments}
                   description={dish.description}
                   image={dish.image}
+                  rating={dish.rating}
                 />
               </div>
             ))
