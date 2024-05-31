@@ -17,7 +17,7 @@ export default function Dishes(props) {
       style={{ width: "90%", margin: "auto", borderBottom: "1px solid" }}
     >
       <div style={{ width: "60%" }}>
-        <div class="d-flex flex-row bd-highlight mb-3">
+        <div className="d-flex flex-row bd-highlight mb-3">
           <div
             class="p-2 bd-highlight"
             style={{ fontSize: "25px", fontWeight: "bold" }}
